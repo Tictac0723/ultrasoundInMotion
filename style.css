@@ -1,0 +1,58 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.page-footer {
+    background-color: black;
+}
+
+.header {
+    background-image: url('./images/header.jpeg');
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+@media(max-widdth: 767px) {
+    .header {
+        height: 500px;
+    }
+}
+
+.header img {
+    width: 150px;
+}
+
+.headerContent {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    width: 100%;
+    -webkit-transform: translateY(-30%);
+    -moz-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    -o-transform: translateY(-30%);
+}
+
+.headerContent p {
+    font-size: 1.5rem;
+}
+
+#downArrow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
