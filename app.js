@@ -14,4 +14,7 @@ $(document).ready(function () {
 
     //PARALLAX
     $('.parallax').parallax();
+
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
 });

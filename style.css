@@ -56,3 +56,50 @@ html {
     margin: auto;
     margin-bottom: 15px;
 }
+
+#about {
+    position: relative;
+    height: 40%;
+    width: 75%;
+    margin: auto;
+    font-size: 1.6rem;
+    padding: 4rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media(max-width: 1024px) {
+    #about {
+        width: 95%;
+    }
+}
+
+.callOut {
+    font-size: 2.5rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.parallax-container {
+    height: 600px;
+}
+
+.bolded {
+    font-weight: bolder;
+}
+
+
+ul:not(.browser-default)>li {
+    list-style-type: initial;
+}
+
+h1 {
+   margin: 0.8rem 0 1.68rem 0;
+}
+
+hr {
+    width: 50%;
+}
+
+.details {
+    font-size: 1.2rem;
+}
