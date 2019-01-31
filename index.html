@@ -8,15 +8,18 @@
   <title>Ultrasound in Motion</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="./app.js"></script>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Raleway|Sarabun" rel="stylesheet">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +31,7 @@
       <div class="s12">
         <div class="header">
           <div class="center-align headerContent">
-            <img src="./images/butterfly.svg" alt="Ultrasound in Motion Logo">
+            <img src="./images/logo.png" alt="Ultrasound in Motion Logo">
             <h1 class="aboutMe">Ultrasound in Motion</h1>
             <p>For you created my inmost being. You knit me together in my mother's womb.
               <br />
@@ -80,12 +83,15 @@
     <br>
     <br>
     <div class="row">
+      <h1 class="center-align">Packages</h1>
+    </div>
+    <div class="row">
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image">
             <img class="cardImage" src="https://via.placeholder.com/150">
             <span class="card-title">Gender Check: $75 (Beginning at 16 weeks)*</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1"><i class="material-icons">more_horiz</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1" href="#details"><i class="material-icons">more_horiz</i></a>
           </div>
           <div class="card-content">
             <p>
@@ -110,7 +116,7 @@
           <div class="card-image">
             <img class="cardImage" src="https://via.placeholder.com/150">
             <span class="card-title">Complete 2D package: $125 (18-26 weeks)*</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1"><i class="material-icons">more_horiz</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1" href="#details"><i class="material-icons">more_horiz</i></a>
           </div>
           <div class="card-content">
             <p>
@@ -136,7 +142,7 @@
           <div class="card-image">
             <img class="cardImage" src="https://via.placeholder.com/150">
             <span class="card-title">Basic 3D/4D Package: $145 (26-34 weeks)</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1"><i class="material-icons">more_horiz</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1" href="#details"><i class="material-icons">more_horiz</i></a>
           </div>
           <div class="card-content">
             <p>
@@ -167,12 +173,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col s12 m4">
+      <div class="col s12 m6 l4">
         <div class="card">
           <div class="card-image">
             <img class="cardImage" src="https://via.placeholder.com/150">
             <span class="card-title">Gold 3D/4D Package: $165 (26-34 weeks)</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1"><i class="material-icons">more_horiz</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1" href="#details"><i class="material-icons">more_horiz</i></a>
           </div>
           <div class="card-content">
             <p>
@@ -201,12 +207,12 @@
           </div>
         </div>
       </div>
-      <div class="col s12 m4">
+      <div class="col s12 m6 l4">
         <div class="card">
           <div class="card-image">
             <img class="cardImage" src="https://via.placeholder.com/150">
             <span class="card-title">Platinum 2 Visit Ultrasound Imaging Package: $255</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1"><i class="material-icons">more_horiz</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light green lighten-1" href="#details"><i class="material-icons">more_horiz</i></a>
           </div>
           <div class="card-content">
             <p>
@@ -230,7 +236,7 @@
     </div>
     <div class="row">
       <div class="col s12 purple green lighten-1">
-        <div id="about" class="center-align">
+        <div id="details" class="center-align">
           <span class="callOut center-align">Details</span>
           <br>
           <br>
@@ -251,7 +257,8 @@
           <br>
           *If baby is in a good position to see gender
           <br>
-          ** Discounts applied to regularly priced packages during the same pregnancy only. Not to be applied to any specials/combined with any other coupons or rebates.
+          ** Discounts applied to regularly priced packages during the same pregnancy only. Not to be applied to any
+          specials/combined with any other coupons or rebates.
           <br>
           <ul>
             <li>Twins are $40 extra</li>
@@ -266,23 +273,135 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h1 class="center-align">FAQs</h1>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>What’s the best time in the
+                pregnancy for an ultrasound?</div>
+              <div class="collapsible-body"><span>There are several important factors involved when producing a 3D/4D
+                  ultrasound. One factor is the amount of space remaining in the womb. 2D ultrasound sees through
+                  everything but when scanning in 3D, everything becomes solid. Therefore things like the umbilical
+                  cord or placenta can act as a barrier if sitting in front of the baby. The most optimal time to see
+                  the baby is between 26 – 30 weeks because there is still room in the womb. The further into the
+                  pregnancy you are, the more the remaining space decreases. Another important factor is how much
+                  amniotic fluid is present. It is important to stay hydrated throughout the pregnancy. Extra fluid
+                  intake a few days prior to coming in for a 3D/4D baby ultrasound scan is known to help with the
+                  clarity of the pictures. The placenta position is another element that affects a ultrasound. An
+                  anterior placenta is on the front side of the womb and in front of the baby while a posterior
+                  placenta is on the backside of the womb and in back of the baby. With 3D/4D imaging, the posterior is
+                  ideal however, it is possible to capture the baby with an anterior.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Can I bring someone with me?</div>
+              <div class="collapsible-body"><span>Absolutely! Ultrasound in Motion's 3D/4D Ultrasound studio welcomes
+                  family and friends! Our scan room has a 47" high definition television large enough for everyone to
+                  view and enjoy seeing the baby.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>What is ultrasound imaging?</div>
+              <div class="collapsible-body"><span>Ultrasound technology uses high frequency sound waves. The waves
+                  bounce off tissue and return to the ultrasound machine at different frequencies, depending on the
+                  density of the tissue. Our ultrasound machine is a state of the art machine that translates the
+                  returning sound waves into images for viewing on its computer monitor. Ultrasound in Motion's 3D and
+                  4D Ultrasound machine is an FDA approved ultrasound machine.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>What is the difference
+                between 2D, 3D, 3D Live and 4D?</div>
+              <div class="collapsible-body"><span>2D ultrasounds are the traditional black & white ultrasounds you have
+                  probably seen before. The pictures show the skeletal structure (outline) of the baby. You also get to
+                  see the baby moving! This is the type of ultrasound that was probably used for your diagnostic
+                  ultrasound. It is still the best technology for gathering measurements of the baby and ensuring that
+                  the baby is developing as expected.
+                  <br>
+                  <br>
+                  3D ultrasounds shows the tissue of the baby, which is more like real pictures. We can see the
+                  roundness of the baby's face, the shape of the nose and the contours of the lips. The color is
+                  actually not the color of the baby, it is computer enhanced to make the pictures more appealing.
+                  <br>
+                  <br>
+                  4D live is the same technology. With this technology you can see the motion of the baby. Some
+                  companies call it 3D Live and some call it 4D Live. If your baby has a large, clear pocket of
+                  amniotic fluid around the face, is moving about and is developed enough, then we can get great clips
+                  of your baby moving (4D live). The 4D live clips are typically only a few minutes.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Is it safe? Are there any
+                risks to me, or my baby?</div>
+              <div class="collapsible-body"><span>
+                  Ultrasounds have been used and performed for well over 30 years. Many extensive studies over that
+                  time period have shown that ultrasounds are not known to cause any harm to mother or baby.
+                  Ultrasounds are a routine procedure that are used all over the country, especially in infertility
+                  clinics that specialize in high risk pregnancies. 3D/4D ultrasound is utilized because of the benefit
+                  of the clear picture and the fact that it is safe to use. 3D/4D ultrasounds use the exact same type
+                  and intensity of ultrasound that is used in conventional 2D scanning
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Can you tell the gender of
+                the baby?</div>
+              <div class="collapsible-body"><span>
+                  We are happy to check gender, and this service is included in all of our packages. We prefer to check
+                  gender after the baby reaches 16 weeks. Gender determination cannot be guaranteed, however, since we
+                  must rely on the cooperation of the baby and several other factors outside our control.
+                  But, if we can not tell the baby's gender, we will bring you back for free!
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Will my insurance pay for my
+                appointment?</div>
+              <div class="collapsible-body"><span>
+                  No, Ultrasound in Motion's elective 3D/4D ultrasounds are not based on medical necessity. They are
+                  for entertainment purposes only. This is not to be used as a substitute for doctor's care.
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Can Ultrasound in Motion do
+                Diagnostic Ultrasound Exams?</div>
+              <div class="collapsible-body"><span>
+                  Yes, diagnostic ultrasounds can be done at Ultrasound in Motion for people who don't have insurance
+                  and are paying cash for exams. We have board certified radiologists that read the exams. We have
+                  competitive cash prices with the area hospitals and outpatient centers. We can meet or beat the best
+                  cash price in the area. Call with any questions.
+                </span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="s12">
+        <div id="map"></div>
+      </div>
+    </div>
+    <br>
+    <br>
     <div class="row">
       <div class="col s12">
-        <h1 class="center-align">FAQs</h1>
-          <ul class="collapsible">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>What’s the best time in the pregnancy for an ultrasound?</div>
-                <div class="collapsible-body"><span>There are several important factors involved when producing a 3D/4D ultrasound. One factor is the amount of space remaining in the womb. 2D ultrasound sees through everything but when scanning in 3D, everything becomes solid.  Therefore things like the umbilical cord or placenta can act as a barrier if sitting in front of the baby. The most optimal time to see the baby is between 26 – 30 weeks because there is still room in the womb. The further into the pregnancy you are, the more the remaining space decreases.  Another important factor is how much amniotic fluid is present. It is important to stay hydrated throughout the pregnancy. Extra fluid intake a few days prior to coming in for a 3D/4D baby ultrasound scan is known to help with the clarity of the pictures. The placenta position is another element that affects a ultrasound. An anterior placenta is on the front side of the womb and in front of the baby while a posterior placenta is on the backside of the womb and in back of the baby. With 3D/4D imaging, the posterior is ideal however, it is possible to capture the baby with an anterior.</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Can I bring someone with me?</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>Third</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-              </li>
-            </ul>
+        <div class="slider-div" id="slider">
+          <div class="slider">
+              <div class="slide">
+                  <img src="images/pregnant.jpeg" alt="Description" class="img-responsive">
+              </div>
+              <div class="slide">
+                      <img src="images/pregnant.jpeg" alt="Description" class="img-responsive">
+              </div>  
+              <div class="slide">
+                      <img src="images/pregnant.jpeg" alt="Description" class="img-responsive">
+              </div>  
+              <div class="slide">
+                      <img src="images/pregnant.jpeg" alt="Description" class="img-responsive">
+              </div>    
+              <div class="slide">
+                      <img src="images/pregnant.jpeg" alt="Description" class="img-responsive">
+              </div>
+          </div>
+      </div>
+
       </div>
     </div>
   </div>
@@ -290,29 +409,69 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Living, learning, and leveling up: one day at a time.</h5>
-          <p class="grey-text text-lighten-4">Here's all the ways you might wanna reach me!</p>
+          <h5 class="white-text">Ultrasound in Motion</h5>
+          <p class="grey-text text-lighten-4">How to get in contact with one of our registered sonographers.</p>
         </div>
         <div class="col l4 offset-l2 s12 s12">
           <ul style="font-size: 1.2rem;">
-            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/taylor-a-clark/" target="_blank"><i
-                  class="material-icons shrink">work</i> LinkedIn</a></li>
-            <li><a class="grey-text text-lighten-3" href="mailto:taylorclark0723@gmail.com"><i class="material-icons shrink">email</i>
-                taylorclark0723@gmail.com</a></li>
-            <li><a class="grey-text text-lighten-3" href="tel:+1-409-626-4474"><i class="material-icons shrink">phone</i>
-                409-626-4474</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/Tictac0723"><i class="material-icons shrink">code</i></a>
-              GitHub</li>
+            <li>
+            <li><a class="grey-text text-lighten-3" href="mailto:astelly@gt.rr.com"><i class="material-icons shrink">mail</i>
+              astelly@gt.rr.com</a></li>
+            <li><a class="grey-text text-lighten-3" href="tel:+1-409-853-4982"><i class="material-icons shrink">phone</i>
+              409-853-4982</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2019 Taylor Clark
+          <br>
+          <br>
+        © 2019 Ultrasound in Motion
+        <div class="dev right"> <img src="./images/dev.svg" alt=""> Website Developed by Taylor Clark</div>
       </div>
     </div>
   </footer>
+  <script src="slick/slick.min.js"></script>
+  <script>
+    function initMap() {
+      // The location of Uluru
+      var locations = [
+        ['8700 9th Ave Suite 108 Port Arthur, Texas 77642', 29.953993, -93.9868827, 0],
+        ['350 Pine Street Suite 605 Beaumont, TX 77701', 30.0855084, -94.0994079, 1],
+      ]
+      var uluru = {
+        lat: 29.953993,
+        lng: -93.9868827
+      };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: new google.maps.LatLng(30.026137, -94.0382107),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      })
+      // The marker, positioned at Uluru
+      var infowindow = new google.maps.InfoWindow({});
+
+      var marker, i;
+
+      for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+          return function () {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBacoXUKwaNLJwvEdW971k3bjSbw_KfUdQ&callback=initMap">
+  </script>
 </body>
 
 </html>
