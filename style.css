@@ -16,7 +16,10 @@ html {
 }
 
 .header {
-    background-image: url('./images/header.jpeg');
+    background-image: url('./images/feet.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,6 +122,7 @@ hr {
 
 .card-title {
     font-size: 1.5rem;
+    color: white;
 }
 
 @media(max-width: 1400px) {
@@ -126,13 +130,16 @@ hr {
         min-height: 815px
     }
 }
+
 @media(max-width: 1024px) {
     .card {
         min-height: 715px
     }
+
     .card-content {
         font-size: .9rem
     }
+
     .card-title {
         font-size: 1.1rem !important;
     }
@@ -151,9 +158,25 @@ hr {
 }
 
 .slide img {
-    width: 500px;
+    width: 70%;
+}
+
+@media (max-width: 1500px) {
+    .slide img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024) {
+    .slide img {
+        width: 100%;
+    }
 }
 
 .dev {
     font-size: .8rem;
+}
+
+.slider {
+    height: auto !important;
 }

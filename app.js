@@ -27,17 +27,16 @@ $(document).ready(function () {
         arrows: true,
         centerMode: true,
         slidesToShow: 3,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
+        arrows: false,
 
         responsive: [{
-                breakpoint: 990,
+                breakpoint: 1500,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 1
                 }
